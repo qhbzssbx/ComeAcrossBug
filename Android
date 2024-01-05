@@ -1,2 +1,4 @@
 1.部分渠道需要对apk进行分包, 但是他们仅支持v1签名的apk, 而unity自动使用v1v2, 可以通过自定义launcherTemplate.gradle文件来实现仅用v1, 且需要把目标版本设置为 30以下(举例 29), 因为面向30(Android 11)的包必须使用V2 或更高级别的签名
   https://liarrdev.github.io/post/APK-Signature-Scheme-v1-is-No-Longer-Supported-on-Android-R/
+
+2.获取已有aar包中的sdk相关文件, 合并入新的aar中, 再对unity中的AndroidManifest进行修改, 将启动项变为新aar中的MainApplication, 就可以在没有旧aar源码的情况下接入新的aar
