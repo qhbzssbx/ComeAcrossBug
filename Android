@@ -2,3 +2,5 @@
   https://liarrdev.github.io/post/APK-Signature-Scheme-v1-is-No-Longer-Supported-on-Android-R/
 
 2.获取已有aar包中的sdk相关文件, 合并入新的aar中, 再对unity中的AndroidManifest进行修改, 将启动项变为新aar中的MainApplication, 就可以在没有旧aar源码的情况下接入新的aar
+
+3.构建aar时build.gradle 文件中的minSdkVersion 版本不能高于主工程的minSdkVersion版本
