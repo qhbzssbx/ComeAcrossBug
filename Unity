@@ -1,0 +1,1 @@
+1.unity 组件互相依赖时最好按照依赖顺序调整在GameObject上的布局, 最近在InputFiled上遇到个问题, InputFiled组件依赖的text组件与其本身位于同一个GameObject, 导致初始化的时候没拿到txt文本报错,整个界面卡死
